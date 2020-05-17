@@ -1,0 +1,67 @@
+/**
+ * style.scss
+ */
+
+// with html being 10px, it is easier to calculate rem values
+// 1rem=10px, 1.6rem=16px, 2.4rem=24px and so on.
+html {font-size: 10px;}
+body {
+  background: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+}
+
+blockquote {font-style: italic;}
+img {max-width: 100%; height: auto;}
+.nobr {white-space: nowrap;}
+
+// header
+header {height: 16rem; display: flex; flex-direction: column; justify-content: center;}
+
+// section article
+article {
+  max-width: 98rem;
+  margin: 0 auto;
+  figure figcaption {
+    padding: 15px;
+  }
+  .tribute-info ul li {
+    padding: 1rem 0;
+    & span {
+      font-weight: bolder;
+    }
+  }
+  h3, .moreinfo {
+    margin: 3rem 0;
+  }
+  .moreinfo {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+article #img-div {background: #FFF;}
+article #image {display: block; margin: 0 auto; border-radius: 4px; padding: 0;}
+article #tribute-info{text-align: left;}
+#main div section:first-of-type {background: #fff;}
+
+// Typography
+h1{font-size: 4.209rem;}
+h2{font-size: 3.157rem;}
+h3{font-size: 2.369rem;}
+h4{font-size: 1.777rem;}
+p {font-size: 1.6rem;}
+
+@media (max-width: 768px) {
+  h1{font-size: calc(4.209rem/1.4);}
+  h2{font-size: calc(3.157rem/1.4);}
+  h3{font-size: calc(2.369rem/1.4);}
+  h4{font-size: calc(1.777rem/1.4);}
+  p {font-size: calc(1.6rem/1.1);}
+  
+  article #image {padding: 0 15px;}
+  article .moreinfo {max-width: 100%;}
+}
