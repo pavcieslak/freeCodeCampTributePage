@@ -41,6 +41,9 @@ article {
 article figure figcaption {
   padding: 15px;
 }
+article .tribute-info ul {
+  padding-left: 20px;
+}
 article .tribute-info ul li {
   padding: 1rem 0;
 }
