@@ -1,4 +1,4 @@
-#FreeCodeCamp - Tribute page
+# FreeCodeCamp - Tribute page
 This repository was created for the purpose of learning GIT via command line.
 
 Tribute page was created as a challenge from FreeCodeCamp website within the Responsive Web Design Projects section.
